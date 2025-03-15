@@ -3,3 +3,11 @@ We began scraping a website that included data about movies internationally. Sim
 recovered a TV Show database and created 4 various dashboards to depict the popularity of tv shows in the U.S. After scraping the movies website, 
 we finished building the rest of our dashboards. We faced a challenge of importing it to our stremlit code so we created buttons to let the user see a full 
 insight of the dashboards in the Tablaeu public view. 
+
+
+### How to run it on your own machine
+
+   ```
+   streamlit run AxesHacks2025.py
+
+   ```
