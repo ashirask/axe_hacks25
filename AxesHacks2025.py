@@ -4,7 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 from pathlib import Path
-
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
     page_title='🍿Blockbuster Bytes',
@@ -25,19 +24,23 @@ tab1, tab2, = st.tabs(["🎞️ Movies", "📺 TV Shows"])
 # Movies tab
 with tab1:
     st.header("Movie Data") 
-    genre = st.selectbox("Choose a Category:", ["Comedy", "Rom-Com", "Horror", "Action"])
+    genre = st.selectbox("Choose a Category:", ["Comedy", "Rom-Com", "Horror", "Action"], key="movie_genre")
     
     if genre == "Comedy":
         st.subheader("Comedy Movies")
-        st.write("description of section")
-        
-    if genre == "Rom-Com":
-        st.subheader("Rom-Com Movies")        
+        st.write("Description of section")
+    
+    elif genre == "Rom-Com":
+        st.subheader("Rom-Com Movies")
 
+    elif genre == "Horror":
+        st.subheader("Horror Movies")
 
+    elif genre == "Action":
+        st.subheader("Action Movies")
 
-# TV shows
+# TV Shows tab
 with tab2:
     st.header("TV Shows")
-    maps = st.selectbox("What information are you interested in?", ["World Map"])
+    maps = st.selectbox("What information are you interested in?", ["World Map"], key="tv_map")
 
